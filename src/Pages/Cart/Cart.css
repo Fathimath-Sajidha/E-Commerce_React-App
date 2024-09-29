@@ -1,0 +1,78 @@
+.cart-view {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+  
+  .cart-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item.card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item.card:hover {
+    background-color: aliceblue;
+  }
+  
+  .cart-item-image img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .cart-item-details {
+    margin-left: 20px;
+  }
+  
+  .cart-item-details h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .cart-item-details p {
+    font-size: 16px;
+  }
+  
+  .clear-cart-button {
+    background-color: #C4DAD2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .def-number-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .def-number-input input[type="number"] {
+    width: 50px; /* Adjust as needed */
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .def-number-input button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px; /* Font size for plus/minus buttons */
+  }
+  
+  .def-number-input button.minus {
+  
+    color: #8d7d7d; /* Red for minus */
+  }
+  
+  .def-number-input button.plus {
+    color: #858585; /* Green for plus */
+  }

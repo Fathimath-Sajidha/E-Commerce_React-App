@@ -1,0 +1,39 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #C4DAD2;
+    color: white;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    padding-right: 60%;
+}
+.logo{
+    height: 40px;
+    margin-right: 10px;
+}
+.navbar-name{
+    font-size: 1.5rem;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cartlogo:hover{
+   color: rgb(54, 56, 56);
+   
+   
+}

@@ -1,0 +1,19 @@
+
+.CardImage{
+    height: 9rem;
+}
+.card-container{
+    display: flex;
+    gap: 40px;
+    margin: 30px;
+}
+.card{
+height: 34rem;
+padding: 20px;
+margin-top: 10px;
+}
+.card:hover{
+border-color: #6A9C89;
+box-shadow: 2px 4px 0;
+background-color:#E9EFEC;
+}

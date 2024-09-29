@@ -1,0 +1,9 @@
+.p-image{
+    align-items: center;
+    height: 50%;
+    width: 50%;
+}
+.product-container{
+    padding: 30px;
+    align-items: center;
+}
