@@ -7,17 +7,17 @@ import RootLayout from './Components/RootLayout/RootLayout.jsx';
 import SingleProductView from './Pages/ProductView/ProductView.jsx';
 import Error from './Pages/ErrorPage/Error.jsx';
 import Cart from './Pages/Cart/Cart.jsx';
-import { useSelector } from 'react-redux'; // Import useSelector
+import { useSelector } from 'react-redux'; 
 import OrderConfirmed from './Pages/OrderConfirm/OrderConfirmed.jsx';
 import SignUp from './Pages/SignUp/SignUp.jsx';
 
 function App() {
-  const { isLoggedIn } = useSelector((store) => store.login); // Check login state
+  const { isLoggedIn } = useSelector((store) => store.login); 
 
   return (
     <BrowserRouter>
       <Routes>
-        {/* If not logged in, redirect to login page */}
+       
         <Route path="/" element={isLoggedIn ? <RootLayout /> : <Navigate to="/login" />} >
           <Route index element={<Home />} />
          

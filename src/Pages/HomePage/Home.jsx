@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { setProducts } from '../../Components/Redux/ProductSlice';
-import ProductCard from '../ProductList/ProductCard/ProductCard';
+import ProductCard from '../ProductList/ProductCard';
 import './Home.css';
+import { CardGroup,Card,CardImg,CardTitle,CardImgOverlay} from 'react-bootstrap';
+
 
 function Home() {
   const dispatch = useDispatch();
@@ -11,10 +13,10 @@ function Home() {
 
   useEffect(() => {
     if (products.length === 0) {
-      // Fetch only if products are not already in the Redux store
+     
       getProducts();
     }
-  }, [products.length]); // Only run if products array is empty
+  }, [products.length]); 
 
   const getProducts = () => {
     axios.get('https://fakestoreapi.com/products')
@@ -28,10 +30,17 @@ function Home() {
   };
 
   return (
+    <div >
+      
+
+    
     <div className='all-container'>
+   
+      
       {filteredProducts.map((product, index) => (
         <ProductCard product={product} key={index} />
       ))}
+      </div>
     </div>
   );
 }

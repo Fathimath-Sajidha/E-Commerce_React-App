@@ -7,7 +7,7 @@ function RootLayout() {
   return (
     <div>
       <NavBar/>
-     <main>
+     <main style={{flex:'1'}}>
      <Outlet/>
      </main>
      <Footer/>

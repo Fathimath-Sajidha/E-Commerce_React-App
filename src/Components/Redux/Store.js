@@ -24,11 +24,10 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 
 export const store = configureStore({
-  reducer: persistedReducer,  // Use the persisted reducer
+  reducer: persistedReducer,  
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-    serializableCheck: false, // Disabling serializableCheck due to redux-persist
+    serializableCheck: false, 
   }),
 });
 
-// Create the persistor, which is responsible for persisting the store
 export const persistor = persistStore(store);

@@ -3,15 +3,16 @@ import './ProductCard.css';
 import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { setCartItems } from '../../../Components/Redux/CartSlice';
-import { setSelectedProduct } from '../../../Components/Redux/ProductSlice';
+import { setCartItems } from '../../Components/Redux/CartSlice';
+import { setSelectedProduct } from '../../Components/Redux/ProductSlice';
 
 function ProductCard({ product }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const addCart = () => {
-    dispatch(setCartItems(product));  // Add the selected product to the cart
+    dispatch(setCartItems(product)); 
+    
   };
   
   const handleClick = () => {
@@ -27,7 +28,7 @@ function ProductCard({ product }) {
           <Card.Text>
             <p> Price: {product.price}</p>
             <button onClick={(e) => {
-              e.stopPropagation();  // Prevent navigation when clicking 'Add To Cart'
+              e.stopPropagation(); 
               addCart();
             }}>Add To Cart</button>
           </Card.Text>

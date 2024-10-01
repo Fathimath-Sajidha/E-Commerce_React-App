@@ -20,11 +20,11 @@ function SingleProductView({product}) {
 
   useEffect(() => {
     if (products.length > 0) {
-      const product = products.find(product => product.id === Number(productId));  // Convert productId to number
+      const product = products.find(product => product.id === Number(productId));  
       if (product) {
         dispatch(setSelectedProduct(product));
       } else {
-        navigate('/');  // If product not found, redirect to home
+        navigate('/');  
       }
     }
   }, [products, productId, dispatch, navigate]);
